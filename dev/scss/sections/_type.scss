@@ -1,0 +1,53 @@
+/* =============
+    Demo
+============= */
+
+// #type-animation{
+//    display: grid;
+//    display: grid;
+//    grid-template-columns: auto 70% auto;
+//    grid-template-areas: ". type .";
+//    height: 100vh;
+//     #binary-container{
+//         display: flex;
+//         align-self: center;
+//         justify-content: center;
+    
+//         background-color: black;
+//         height: 100vh;
+//         width: auto;
+//         grid-area: type;
+//         overflow: hidden;
+//         .code{
+//             text-align: justify;
+//             color: #616161;
+
+
+//         }
+
+
+
+//     }
+
+// }
+
+#type-container{
+
+    display: grid;
+    grid-template-columns: auto 70% auto;
+    grid-template-areas: ". spooky .";
+    >div{
+        grid-area: spooky;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg{
+            filter: blur(0px);
+            width: 100%;
+
+            
+        }
+    }
+}
