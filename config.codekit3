@@ -38,6 +38,14 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/content/binary.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/binary.html",
+		"oF": 0
+		},
 	"/dev/content/type.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -89,6 +97,17 @@
 		"oA": 0,
 		"oAP": "/deploy/js/scripts-min.js",
 		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/title.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/title-min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},

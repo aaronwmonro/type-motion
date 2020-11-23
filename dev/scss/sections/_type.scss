@@ -32,22 +32,93 @@
 // }
 
 #type-container{
-
+overflow: hidden;
     display: grid;
     grid-template-columns: auto 70% auto;
     grid-template-areas: ". spooky .";
-    >div{
+    >div{ position: relative;
         grid-area: spooky;
         height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
 
-        svg{
+        svg{position: absolute;
             filter: blur(0px);
             width: 100%;
-
+            z-index: 0;
+            #background-2{
+                filter: drop-shadow( 3px 3px 20px rgba(255, 0, 10, 0.7));
+                z-index: 300;
+                // fill: rgba(255, 255, 255, 0.0) ;
+            }
+            .code{
+                scale: .7;
+            }
             
+        }
+
+        p{position: absolute;
+            color: white;
+           font-size: rem-calc(40);
+           letter-spacing: -24px;
+           font-family: 'Courier Prime', monospace;
+           filter: blur(3px);
+
+        }
+        #title{ display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            overflow: hidden;
+            h1{color: white;
+                z-index: 100;
+                text-align: center;
+                align-items: center;
+                font-family: 'Stalinist One', cursive;
+                // font-family: 'Russo One', sans-serif;
+                // font-family: 'Squada One', cursive;
+                    padding: 0px 10px;
+                    
+                   
+               
+            }
+
+            .title-divs{
+                display: flex;  
+                z-index: 100;
+                position: absolute; 
+            }
+            .st0{fill:#fff;
+                
+            }
+
+            .blur{
+                filter: blur(5px);
+            }
+            #robot{
+                margin-bottom: 150px;
+                
+                width: 40vw;
+
+                #robot-o{
+                    #robot-o-2{
+                     opacity: 0;
+                    }
+                }
+            }
+            #exclusion{
+                // filter: blur(3px);
+                position: absolute;
+                width: 40vw;
+               
+                
+            }
+
+            #protocol{font-size: rem-calc(25);
+                margin-top: 130px;
+                width: 40vw;
+            }
         }
     }
 }

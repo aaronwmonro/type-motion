@@ -427,11 +427,13 @@ textarea {
     Demo
 ============= */
 #type-container {
+  overflow: hidden;
   display: grid;
   grid-template-columns: auto 70% auto;
   grid-template-areas: ". spooky .";
 }
 #type-container > div {
+  position: relative;
   grid-area: spooky;
   height: 100vh;
   display: flex;
@@ -439,6 +441,65 @@ textarea {
   justify-content: center;
 }
 #type-container > div svg {
+  position: absolute;
   filter: blur(0px);
   width: 100%;
+  z-index: 0;
+}
+#type-container > div svg #background-2 {
+  filter: drop-shadow(3px 3px 20px rgba(255, 0, 10, 0.7));
+  z-index: 300;
+}
+#type-container > div svg .code {
+  scale: 0.7;
+}
+#type-container > div p {
+  position: absolute;
+  color: white;
+  font-size: 2.5rem;
+  letter-spacing: -24px;
+  font-family: "Courier Prime", monospace;
+  filter: blur(3px);
+}
+#type-container > div #title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+#type-container > div #title h1 {
+  color: white;
+  z-index: 100;
+  text-align: center;
+  align-items: center;
+  font-family: "Stalinist One", cursive;
+  padding: 0px 10px;
+}
+#type-container > div #title .title-divs {
+  display: flex;
+  z-index: 100;
+  position: absolute;
+}
+#type-container > div #title .st0 {
+  fill: #fff;
+}
+#type-container > div #title .blur {
+  filter: blur(5px);
+}
+#type-container > div #title #robot {
+  margin-bottom: 150px;
+  width: 40vw;
+}
+#type-container > div #title #robot #robot-o #robot-o-2 {
+  opacity: 0;
+}
+#type-container > div #title #exclusion {
+  position: absolute;
+  width: 40vw;
+}
+#type-container > div #title #protocol {
+  font-size: 1.5625rem;
+  margin-top: 130px;
+  width: 40vw;
 }
